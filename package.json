@@ -1,28 +1,29 @@
 {
-  "name": "@matiaslgonzalez/react-timeline-range-slider",
+  "name": "@hakanozdabak/react-timeline-range-slider",
   "version": "1.6",
   "description": "Time Slider component for React",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
   "scripts": {
-    "build": "yarn build:esm",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
-    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
-    "test": "jest --config jest.config.js",
-    "prepare": "yarn build",
-    "prepublishOnly": "yarn prettier && yarn lint"
-  },
+  "build": "npm run build:esm",
+  "build:esm": "tsc",
+  "build:cjs": "tsc --module commonjs --outDir dist/cjs",
+  "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
+  "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
+  "test": "jest --config jest.config.js",
+  "prepare": "npm run build",
+  "prepublishOnly": "npm run prettier && npm run lint"
+},
   "author": "Elizaveta Shkodkina <lizashkodkina@gmail.com>",
   "contributors": [
-    "Matías González <hello@matiaslgonzalez.com>"
+    "Matías González <hello@matiaslgonzalez.com>",
+    "Hakan ÖZDABAK"
   ],
-  "homepage": "https://www.npmjs.com/package/@matiaslgonzalez/react-timeline-range-slider",
+  "homepage": "https://github.com/HakanOZDABAK/react-timeline-range-slider",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MatiasLGonzalez/react-timeline-range-slider"
+    "url": "https://github.com/HakanOZDABAK/react-timeline-range-slider"
   },
   "keywords": [
     "react-component",

@@ -34,8 +34,7 @@ export const StyledTrack = styled.div<StyledTrackProps>`
     border: 1px solid rgba(214,0,11,0.5);
   `
         : `
-    background-color: rgba(98, 203, 102, 0.5);
-    border: 1px solid #62CB66;
+
   `
       : disabled
       ? `

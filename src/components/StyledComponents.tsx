@@ -1,5 +1,5 @@
-import styled from '@emotion/styled'
-import type { StyledTrackProps } from '../types'
+import styled from '@emotion/styled';
+import type { StyledTrackProps } from '../types';
 
 export const TimeRangeContainer = styled.div`
   position: relative;
@@ -8,7 +8,7 @@ export const TimeRangeContainer = styled.div`
   width: 100%;
   box-sizing: border-box;
   margin-top: 1em;
-`
+`;
 
 export const StyledTrack = styled.div<StyledTrackProps>`
   position: absolute;
@@ -47,8 +47,11 @@ export const StyledTrack = styled.div<StyledTrackProps>`
     background-color: rgba(214,0,11,0.5);
     border: 1px solid rgba(214,0,11,0.5);
   `
-      : ``}
-`
+      : `
+    background-color: rgba(98, 203, 102, 0.5);
+    border: 1px solid #62CB66;
+  `}
+`;
 
 /** Slider used for input */
 export const StyledOuterRailDiv = styled.div`
@@ -57,7 +60,7 @@ export const StyledOuterRailDiv = styled.div`
   height: 5em;
   transform: translate(0%, -50%);
   cursor: pointer;
-`
+`;
 
 /** Slider used for drawing */
 export const StyledInnerRailDiv = styled.div`
@@ -69,7 +72,7 @@ export const StyledInnerRailDiv = styled.div`
   pointer-events: none;
   background-color: #f5f7fa;
   border-bottom: 1px solid #c8cacc;
-`
+`;
 
 export const StyledHandleWrapper = styled.div`
   position: absolute;
@@ -80,7 +83,7 @@ export const StyledHandleWrapper = styled.div`
   height: 24px;
   cursor: pointer;
   background-color: transparent;
-`
+`;
 
 export const StyledHandleContainer = styled.div<{ disabled: boolean }>`
   position: absolute;
@@ -92,7 +95,7 @@ export const StyledHandleContainer = styled.div<{ disabled: boolean }>`
   border-radius: 4px;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
   background-color: ${({ disabled }) => (disabled ? '#666' : '#FFFFFF')};
-`
+`;
 
 export const StyledHandleMarker = styled.div<{ error: boolean }>`
   width: 2px;
@@ -101,7 +104,7 @@ export const StyledHandleMarker = styled.div<{ error: boolean }>`
   border-radius: 2px;
   background-color: ${({ error }) => (error ? 'rgb(214, 0, 11)' : 'rgb(98, 203, 102)')};
   transition: background-color 0.2s ease;
-`
+`;
 
 export const TickMarker = styled.div<{ isFullHour: boolean }>`
   position: absolute;
@@ -110,7 +113,7 @@ export const TickMarker = styled.div<{ isFullHour: boolean }>`
   height: ${({ isFullHour }) => (isFullHour ? '1em' : '0.5em')};
   background-color: #c8cacc;
   z-index: 2;
-`
+`;
 
 export const TickLabel = styled.div`
   position: absolute;
@@ -120,4 +123,4 @@ export const TickLabel = styled.div`
   z-index: 2;
   color: #77828c;
   font-family: sans-serif;
-`
+`;
